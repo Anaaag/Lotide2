@@ -30,6 +30,7 @@ const takeUntil = function(array, callback) {
   return results;
 };
 
+module.exports = takeUntil;
 
 const numbers = [2, 7, 15, 22];
 const listOfFriends = ["cam", "kait", "serena", "emma"];

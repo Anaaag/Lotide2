@@ -33,6 +33,8 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 
 assertArraysEqual(letterPositions("cat in hat").c, [0]);
 assertArraysEqual(letterPositions("cat in hat").h, [7]);

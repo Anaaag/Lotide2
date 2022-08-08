@@ -7,13 +7,14 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKey = function(object, callback) {
-  let starNames = Object.keys(object);
-  for (let key of starNames) {
+  const starNames = Object.keys(object);
+  for (const key of starNames) {
     if( callback(object[key]))
      return key;
   }
 };
 
+module.exports = findKey;
 
 assertEqual(findKey({
   "Blue Hill": { stars: 1 },
