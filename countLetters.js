@@ -25,3 +25,5 @@ const countLetters = function(string) {
 };
 
 console.log(countLetters("cat in hat"));
+
+
