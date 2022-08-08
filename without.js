@@ -20,12 +20,13 @@ const assertArraysEqual = function(arrOne, arrTwo) {
 
 const without = function(source, itemsToRemove) {
   let newArray = [];
-  for (let i = 0; i < source.length; i++) {
-    if (source[i] !== itemsToRemove[i]) 
-      newArray.push(source[i]);
-  }
+  for (let i = 0; i < source.length; i++) { 
+    if (!itemsToRemove.includes(source[i])) 
+        newArray.push(source[i]);
+    }
   return newArray;;
-}
+};
 
-without([1, 2, 3], [1]); // => [2, 3]
-without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
+// without([1, 2, 3], [1]); // => [2, 3]
+// without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
+assertArraysEqual(without(["1", "1", "1", "2", "3", "1" , "1"], ["1", 2, "3"]), ["2"]);
