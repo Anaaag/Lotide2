@@ -2,6 +2,9 @@ const eqArrays = function(arrOne, arrTwo) {
   if (arrOne === arrTwo) {
     return true;
   }
+  if (arrOne === undefined || arrTwo === undefined) {
+    return false;
+  }
   if (arrOne.length !== arrTwo.length) {
     return false;
   }

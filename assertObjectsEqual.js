@@ -1,9 +1,8 @@
-const eqObjects = require('./');
+const eqObjects = require('./eqObjects');
 
 
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect
-  console.log((eqObjects(actual, expected)))
   if(eqObjects(actual, expected)) {
     console.log(`✅✅Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
@@ -21,3 +20,4 @@ const dc = { d: ["2", 3], c: "1" };
 
 assertObjectsEqual(eqObjects(ab, ba), true);
 assertObjectsEqual(eqObjects(cd, dc), true);
+assertObjectsEqual(eqObjects(ab, abc), false);
