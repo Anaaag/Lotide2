@@ -1,6 +1,6 @@
 {
   "name": "@anaaa/lotide2",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a library of lotide functions",
   "main": "assertArraysEqual.js",
   "directories": {

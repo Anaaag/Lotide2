@@ -3,7 +3,7 @@
 const middle = function(arrOne) {
   const middElement = [];
   if (arrOne.length === 1 || arrOne.length === 2) {
-    middElement = [];
+   return [];
   } else if (arrOne.length % 2 === 1) {
     middElement.push(arrOne[Math.floor((arrOne.length - 1) / 2)]);
   } else if (arrOne.length % 2 === 0) {
